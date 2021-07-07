@@ -2,11 +2,7 @@
   "name": "dag-map",
   "version": "2.0.2",
   "description": "A topologically ordered map of key/value pairs with a simple API for adding constraints.",
-  "keywords": [
-    "dag",
-    "dependencies",
-    "map"
-  ],
+  "keywords": ["dag", "dependencies", "map"],
   "repository": {
     "type": "git",
     "url": "https://github.com/krisselden/dag-map.git"
@@ -20,10 +16,18 @@
     "dag-map.umd.js",
     "dag-map.umd.js.map"
   ],
+  "type": "module",
   "main": "dag-map.umd.js",
   "module": "dag-map.js",
   "jsnext:main": "dag-map.js",
   "typings": "dag-map.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dag-map.js",
+      "browser": "./dag-map.umd.js",
+      "require": "./dag-map.umd.js"
+    }
+  },
   "scripts": {
     "build": "tsc && rollup -c",
     "prepare": "npm run build",
