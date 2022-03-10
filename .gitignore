@@ -1,10 +1,10 @@
 .DS_Store
 node_modules/
 /tmp/
-dag-map.js
-dag-map.umd.js
 *.map
 *.d.ts
 *.log
 *.cfg
 *.asm
+yarn.lock
+pnpm-lock.yaml
